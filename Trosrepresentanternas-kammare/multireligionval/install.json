@@ -1,0 +1,69 @@
+{
+  "resources": {
+    "head": [
+      {
+        "type": "style",
+        "src": "./themes/{{ options.theme }}.css"
+      }
+    ],
+    "body": [
+      {
+        "type": "script",
+        "src": "plugin.js"
+      },
+      {
+        "type": "script",
+        "contents": "Plugin.init(INSTALL_OPTIONS)"
+      }
+    ]
+  },
+  "options": {
+    "properties": {
+      "headerText": {
+        "order": 1,
+        "title": "Header Text",
+        "description": "Appears above Plugin.",
+        "type": "string"
+      },
+      "location": {
+        "order": 2,
+        "title": "Location",
+        "description": "Choose a location for Plugin.",
+        "type": "string",
+        "format": "selector"
+      },
+      "theme": {
+        "order": 3,
+        "title": "Theme",
+        "description": "Choose a theme for Plugin.",
+        "type": "string",
+        "enum": [
+          "default",
+          "flat",
+          "skeuomorphic",
+          "colorful",
+          "minimal"
+        ],
+        "enumNames": {
+          "default": "Default",
+          "flat-and-trendy": "Flat and Trendy",
+          "skeuomorphic": "Skeuomorphic",
+          "colorful": "Colorful",
+          "minimal":  "Minimal"
+       },
+        "default": "default"
+      },
+      "color": {
+        "order": 4,
+        "title": "Color",
+        "showIf": {
+          "theme": "colorful"
+        },
+        "description": "Choose a color.",
+        "type": "string",
+        "format": "color",
+        "default": "#e90f92"
+      }
+    }
+  }
+}

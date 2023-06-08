@@ -1,0 +1,5 @@
+.Normal_text {font-family:'Droid Serif';font-weight:normal;font-style:normal;font-size:16px;text-decoration:none;text-transform: none;color:#333333;-webkit-text-stroke: 0px black;letter-spacing:0em;}
+.Heading_1 {font-family:'Open Sans';font-weight:normal;font-style:normal;font-size:28px;text-decoration:none;text-transform: none;color:#CC5945;-webkit-text-stroke: 0px black;letter-spacing:0em;}
+.Heading_2 {font-family:'Open Sans SemiBold';font-weight:600;font-size:20px;background-color:Transparent;}
+.Preformatted_Text {font-family:Courier New;font-size:13.33px;}
+.Text_body {font-size:14.67px;}
